@@ -1,0 +1,3 @@
+
+javac com\czx\algorithms\chapter1_1\EX01.java
+java com.czx.algorithms.chapter1_1.EX01
