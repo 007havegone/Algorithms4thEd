@@ -2,7 +2,7 @@ package com.czx.algorithms.chapter1_2;
 
 import java.util.concurrent.CountDownLatch;
 
-import edu.princeton.cs.algs4.Counter;
+//import edu.princeton.cs.algs4.Counter;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
