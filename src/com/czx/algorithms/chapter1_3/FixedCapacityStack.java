@@ -37,7 +37,7 @@ public class FixedCapacityStack<Item> {
 			if (!item.equals("-"))
 				s.push(item);
 			else if (!s.isEmpty())
-				StdOut.println(s.pop() + " ");
+				StdOut.print(s.pop() + " ");
 		}
 		StdOut.println("(" + s.size() + " left on the stack");
 	}
