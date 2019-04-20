@@ -16,11 +16,15 @@ public class FixedCapacityStackOfStrings {
 	public boolean isEmpty() {
 		return N == 0;
 	}
-
+	// practice 1.3.1
+	public boolean isFull() {
+		return N==a.length;
+	}
+	
 	public int size() {
 		return N;
 	}
-
+	
 	public void push(String item) {
 		a[N++] = item;
 	}
