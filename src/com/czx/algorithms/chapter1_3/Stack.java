@@ -20,7 +20,11 @@ public class Stack<Item> implements Iterable<Item> {
 	public int size() {
 		return N;
 	}
-
+	// 练习1.3.7
+	public Item peek() {
+		return first.item;
+	}
+	
 	public void push(Item item) {// 栈顶添加元素
 		Node oldfirst = first;
 		first = new Node();
@@ -54,6 +58,17 @@ public class Stack<Item> implements Iterable<Item> {
 			return item;
 		}
 		
+	}
+	public static Stack<String> copy(Stack<String> s)
+	{
+		Stack<String> ret=new Stack<>();
+		String []temp=new String[s.size()];
+		int i=0;
+		for(String t:s)
+			temp[i++]=t;
+		for(i=temp.length-1;i>=0;i--)
+			ret.push(temp[i]);
+		return ret;
 	}
 	public static void main(String[] args) {
 		Stack<String> s = new Stack<String>();
